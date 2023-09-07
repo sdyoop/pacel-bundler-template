@@ -1,0 +1,20 @@
+$bgColor:black;
+
+//주석
+/*주석*/
+@mixin center{
+  display: flex;justify-content: center;
+  align-items: center;
+  
+}
+body{
+  background-color: $bgColor;
+}
+.container{
+  @include center;
+  h1{color: orange;
+    &+img{
+      width: 300px;}
+  }
+}
+
